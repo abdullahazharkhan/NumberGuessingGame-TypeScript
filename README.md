@@ -1,3 +1,3 @@
 # NumberGuessingGame
 
-## NPX COMMAND: npx guessthenumberr
+## NPX COMMAND: npx numberguessinggame
