@@ -1,3 +1,5 @@
 # NumberGuessingGame
 
-## NPX COMMAND: npx numberguessinggame
+```
+npx numberguessinggame
+```

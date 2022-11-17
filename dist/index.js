@@ -1,12 +1,10 @@
-#! /usr/bin/env node
-
 import * as inquirer from 'inquirer';
 import chalk from "chalk";
 const prompt = inquirer.createPromptModule();
 let tries = 0;
 let noOfChances = 3;
 let randomNumber = Math.floor((Math.random() * 10) + 1);
-console.log(chalk.bgCyan(`GUESS A NUMBER 👌`));
+console.log(chalk.bgCyan(`      GUESS A NUMBER 👌`));
 function guessNumber() {
     prompt([
         {
@@ -39,7 +37,7 @@ function guessNumber() {
                     guessNumber();
                 }
                 else {
-                    console.log(chalk.redBright("you lost"));
+                    console.log(chalk.redBright(" # you lost"));
                 }
             }
             else {

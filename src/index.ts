@@ -5,7 +5,7 @@ const prompt = inquirer.createPromptModule();
 let tries: number = 0;
 let noOfChances: number = 3;
 let randomNumber: number = Math.floor((Math.random()*10)+1);
-console.log(chalk.bgCyan(`GUESS A NUMBER 👌`))
+console.log(chalk.bgCyan(`      GUESS A NUMBER 👌`))
 function guessNumber():void {
     prompt([
         {
@@ -35,7 +35,7 @@ function guessNumber():void {
                     console.log(`you guessed a number smaller than the random number and you have ${noOfChances} chance(s) left`);
                     guessNumber();
                 } else {
-                    console.log(chalk.redBright("you lost"))
+                    console.log(chalk.redBright(" # you lost"));
                 }
             } else {
                 console.log(chalk.bgRedBright(`only numbers are valid`));
@@ -52,5 +52,6 @@ function isNumber(num: string): boolean {
     let check = !isNaN(parse);
     return check;
 }
+
 guessNumber();
 
